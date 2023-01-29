@@ -110,11 +110,33 @@ li {
 .mainvisual__img {
   width: 100%;
   text-align: center;
-  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  left: 0;
 }
-.mainvisual__img img {
+.mainvisual__img__main {
+  position: relative;
+}
+.mainvisual__img__main:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  border-image-source: repeating-linear-gradient(45deg, #AA998A 0px, #AA998A 2px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0) 7px);
+  border-image-slice: 40;
+  border-width: 40px;
+  border-image-repeat: round;
+  border-style: solid;
+  box-sizing: content-box;
+}
+.mainvisual__img__main img {
   height: 500px;
-  box-shadow: 20px 20px 0 #AA998A;
 }
 
 .sec {
