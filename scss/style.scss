@@ -14,7 +14,7 @@ $breakpoints: (
   }
 }
 html {
-  font-size: 20px;
+    nt-size: 20px;
 }
 // html {
 //   @include bq(tb) {
@@ -221,7 +221,7 @@ li {
 }
 
 .sec-title {
-  font-size: 34px;
+  font-size: 1.7rem;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
@@ -347,22 +347,142 @@ li {
 
 .about {
 
-  .sec-title {
+  .sec-title, p, a {
     color: $accent-color;
   }
 
-  a {
-    color: $accent-color;
+  .profile {
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    text-align: center;
+
+    &__img {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      width: 300px;
+      height: auto;
+    }
+
+    &__name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      padding-top: 10px;
+    }
+  }
+
+  .chronology {
+    margin-top: 40px;
+    text-align: center;
   }
 }
 
 .contact {
+  text-align: center;
 
-  .sec-title {
+  .sec-title, p, a {
     color: $sub-color;
   }
 
+  .lead {
+    font-size: 0.8rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .mail-icon {
+    color: $accent-color;
+    font-size: 1.4rem;
+    padding-right: 10px;
+  }
+
+  .sns-list {
+    margin-top: 20px;
+
+    &__icon {
+      color: $accent-color;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.footer {
+  padding: 30px;
+  background-color: $accent-color;
+
+  .copyright {
+    font-size: 0.6rem;
+    text-align: center;
+    color: $base-color;
+  }
+}
+
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+  /*はじめは非表示*/
+	opacity: 0;
+	transform: translateX(100px);
+
+  /*リンクの形状*/
   a {
-    color: $sub-color;
+    color: $base-color;
+    background: $accent-color;
+    border: 2px solid $base-color;
+    // border-color: $base-color;
+    // border-style: solid;
+    border-radius: 5px;
+    font-size:0.8rem;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+
+    width: 60px;
+    height: 60px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition:all 0.3s;
+
+    &:hover {
+      background: #777;
+    }
+  }
+}
+
+/*　左の動き　*/
+#page-top.LeftMove{
+  animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime{
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*　右の動き　*/
+#page-top.RightMove{
+  animation: RightAnime 0.5s forwards;
+}
+
+@keyframes RightAnime{
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(100px);
   }
 }
