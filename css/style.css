@@ -160,8 +160,17 @@ li {
   position: absolute;
   top: 50px;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
   z-index: 10;
+}
+@media screen and (max-width: 600px) {
+  .mv__text {
+    top: 100px;
+    left: 20%;
+    transform: translateY(-50%) translateX(-10%);
+    -webkit-transform: translateY(-50%) translateX(-10%);
+  }
 }
 .mv__text__concept {
   font-size: 2.2rem;
@@ -170,7 +179,7 @@ li {
 }
 @media screen and (max-width: 600px) {
   .mv__text__concept {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
