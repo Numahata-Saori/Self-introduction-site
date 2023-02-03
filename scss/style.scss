@@ -99,6 +99,8 @@ li {
   @include bq(tb-s) {
     flex-direction: column;
     text-align: center;
+    padding: 20px auto;
+    height: 90px;
   }
 
   a {

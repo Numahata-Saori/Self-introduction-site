@@ -54,6 +54,8 @@ li {
   .header {
     flex-direction: column;
     text-align: center;
+    padding: 20px auto;
+    height: 90px;
   }
 }
 .header a {
