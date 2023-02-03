@@ -50,7 +50,7 @@ li {
   padding: 25px 100px;
   width: 100%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .header {
     flex-direction: column;
     text-align: center;
@@ -64,7 +64,7 @@ li {
   line-height: 1.2;
   letter-spacing: 0.05em;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .header .header-logo {
     font-size: 1rem;
   }
@@ -72,7 +72,7 @@ li {
 .header .gnav {
   font-size: 1rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .header .gnav {
     font-size: 0.8rem;
     margin: 0 20px;
@@ -88,7 +88,7 @@ li {
 .header .gnav__list__item:not(:last-child) {
   margin-right: 20px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .header .gnav__list__item:not(:last-child) {
     margin-right: 10px;
   }
@@ -118,7 +118,7 @@ li {
   position: relative;
   z-index: 10;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .mv {
     height: 400px;
   }
@@ -128,10 +128,10 @@ li {
 }
 .mv__img__item {
   height: 550px;
-  margin: 0 20%;
+  margin: 0% 20%;
   position: relative;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .mv__img__item {
     height: 350px;
     margin: 0 5%;
@@ -144,13 +144,14 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
+  margin: 0 auto;
   box-shadow: inset 0px 0px 20px 20px #EADFCA;
 }
 .mv__img__item img {
-  height: 550px;
-  width: auto;
+  height: 99%;
+  width: 99%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .mv__img__item img {
     height: 350px;
   }
@@ -163,6 +164,14 @@ li {
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   z-index: 10;
+}
+@media screen and (max-width: 860px) {
+  .mv__text {
+    top: 150px;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
 }
 @media screen and (max-width: 600px) {
   .mv__text {
@@ -178,7 +187,7 @@ li {
   margin-bottom: 20px;
   text-shadow: 0.02em 0.02em 0.02em #AA998A;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .mv__text__concept {
     font-size: 1.2rem;
   }
@@ -187,7 +196,7 @@ li {
   height: 250px;
   border-radius: 50%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .mv__text img {
     height: 150px;
   }
